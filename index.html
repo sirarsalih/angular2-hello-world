@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Angular 2 - Hello world</title>
+    <!-- Libraries -->
+    <script src="https://github.jspm.io/jmcriffey/bower-traceur-runtime@0.0.87/traceur-runtime.js"></script>
+    <script src="https://jspm.io/system@0.16.js"></script>
+    <script src="bundle/angular2.dev.js"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <script>
+      System.import('app');
+    </script>
+
+    <hello-world></hello-world>
+
+<!--Experimental code
+    <div car-row [car]="car" (click)="display(car)"></div>
+-->
+
+  </body>
+</html>
