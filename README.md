@@ -1,5 +1,5 @@
 # angular2-hello-world
-First hello world in Angular 2.0.
+My first hello world in Angular 2.0.
 
 <h2>Setup</h2>
 1. <code>npm install</code> to install dependencies.
