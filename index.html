@@ -16,9 +16,38 @@
 
     <hello-world></hello-world>
 
-<!--Experimental code
+<!--Experimental code below
     <div car-row [car]="car" (click)="display(car)"></div>
--->
 
+    <div[ng-if]="a > b"></div>
+    <div[ng-if]="myStr =='yes'"></div>
+    <div[ng-if]="display()"></div>
+    
+    <ul[ng-switch]="choice">
+      <li *ng-switch-when="1">1st choice</li>
+      <li *ng-switch-when="2">2nd choice</li>
+      <li *ng-switch-when="3">3rd choice</li>
+      <li *ng-switch-when="2">2nd choice, again</li>
+      <li *ng-switch-default>Default choice</li>
+    </ul>
+  
+    <div[style.color]="'red'"></div>  
+    <div[ng-style]="{color:'red','background-color':'blue'}"></div>
+  
+  .colored {
+    color:red;
+    background-color:blue;
+  }
+  
+  <div [class]="{colored:false}"></div>
+  <div [class]="{colored:true}"></div>
+  
+  <div [class]="['colored','round']">
+  
+  <div [class]="classArray">  
+    
+  <div*ng-for="#c of cars">{{ c }}</div>
+  
   </body>
+  -->
 </html>
