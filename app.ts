@@ -10,12 +10,18 @@ import {
   selector: 'hello-world'
 })
 @View({
-  template: `<div>Hello world!</div>`
+  template: `<div>Hello {{conference}}!</div>`
 })
 class HelloWorld {
+  conference: string;
+  
+  constructor(){
+    this.conference = "JavaZone 2015";
+  }
 }
 
 bootstrap(HelloWorld);
+
 
 /**Experimental code below **/
 
@@ -56,3 +62,32 @@ bootstrap(HelloWorld);
 //   }
 // }
 // bootstrap(CarRow);
+
+/// <reference path="typings/angular2/angular2.d.ts" />
+
+// import {
+//   Component, 
+//   View,
+//   bootstrap,
+//   bind
+//   } from "angular2/angular2";
+// import {AngularFire, FirebaseArray} from 'firebase/angularfire';
+// 
+// @Component({
+//   selector: 'hello-world',
+//   componentServices: [
+//     AngularFire,
+//     bind(Firebase).toValue(new Firebase('https://webapi.firebaseio-demo.com/test'))
+// ]})
+// @View({
+//   template: `<div>Hello world!</div>`
+// })
+// class HelloWorld {
+//   todoService: FirebaseArray;
+// 
+//   constructor(sync: AngularFire) {
+//     this.todoService = sync.asArray();
+//   }
+// }
+// 
+// bootstrap(HelloWorld);
