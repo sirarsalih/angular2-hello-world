@@ -48,6 +48,16 @@
     
   <div*ng-for="#c of cars">{{ c }}</div>
   
-  </body>
+  <div>
+    {{ content }}
+    <span ng-non-bindable>
+        = {{ content }}
+    </span>
+  </div>
+  
+  My content = {{ content }}
   -->
+  
+  </body>
+  
 </html>
